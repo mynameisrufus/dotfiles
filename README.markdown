@@ -7,4 +7,4 @@
 
 ### Acknowledgements
 
-Thanks to Ryan Bates for the Rakefile and general idea.
+Thanks to [Ryan Bates]( http://github.com/ryanb/dotfiles) for the Rakefile code and [James Sadler](http://github.com/freshtonic/dotfiles) for the pathogen and bundle ideas.
