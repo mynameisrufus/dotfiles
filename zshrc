@@ -22,4 +22,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+alias vi=vim
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

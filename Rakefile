@@ -32,6 +32,11 @@ task :install do
   end
 end
 
+task :update do
+  `wget --output-document=vim/autoload/pathogen.vim https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim`
+  `git submodule foreach git pull origin master`
+end
+
 def replace_file(file)
   system %Q{rm -rf "$HOME/.#{file.sub('.erb', '')}"}
   link_file(file)
