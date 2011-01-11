@@ -20,6 +20,11 @@ plugins=(git ruby rails cap github)
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/sbin:$PATH
+export PATH=/opt/local/bin:$PATH
+export PATH=/opt/bin:$PATH
+
 # Customize to your needs...
 
 alias vi=vim
