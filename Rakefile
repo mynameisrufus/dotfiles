@@ -33,8 +33,8 @@ task :install do
 end
 
 task :update do
-  `wget --output-document=vim/autoload/pathogen.vim https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim`
-  `git submodule foreach git pull origin master`
+  system %Q{wget --no-check-certificate --output-document=vim/autoload/pathogen.vim https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim}
+  system %Q{git submodule foreach git pull origin master}
 end
 
 def replace_file(file)
