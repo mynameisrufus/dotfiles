@@ -26,7 +26,7 @@ export PATH=/opt/local/bin:$PATH
 export PATH=/opt/bin:$PATH
 
 # Customize to your needs...
-
+setopt NOCORRECTALL
 alias vi=vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
