@@ -25,6 +25,7 @@ set incsearch		" do incremental searching
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set tw=72 " when the line will wrap
 
 " Always display the status line
 set laststatus=2
