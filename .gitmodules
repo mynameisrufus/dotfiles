@@ -31,3 +31,9 @@
 [submodule "vim/bundle/vim-sed"]
 	path = vim/bundle/vim-sed
 	url = https://github.com/mynameisrufus/vim-sed.git
+[submodule "vim/bundle/vim-ack"]
+	path = vim/bundle/vim-ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/vim-snipmate"]
+	path = vim/bundle/vim-snipmate
+	url = https://github.com/msanders/snipmate.vim.git
