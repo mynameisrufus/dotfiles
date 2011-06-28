@@ -24,9 +24,14 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/usr/sbin:$PATH
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/bin:$PATH
+export PATH=~/Library/android-sdk-mac_x86/platform-tools:$PATH
 
 # Customize to your needs...
 setopt NOCORRECTALL
 alias vi=vim
+alias gd='git diff'
+alias gdv='git diff | vim -'
+
+alias ack='ack -a --ignore-dir log --ignore-dir coverage'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
