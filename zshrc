@@ -26,12 +26,16 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/bin:$PATH
 export PATH=~/Library/android-sdk-mac_x86/platform-tools:$PATH
+export NODE_PATH=/usr/local/lib/node
+export EDITOR=vim
 
 # Customize to your needs...
 setopt NOCORRECTALL
 alias vi=vim
 alias gd='git diff'
 alias gdv='git diff | vim -'
+alias be='bundle exec'
+alias bake='bundle exec rake'
 
 alias ack='ack -a --ignore-dir log --ignore-dir coverage'
 

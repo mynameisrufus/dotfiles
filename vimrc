@@ -11,7 +11,7 @@ map <leader>s :%s/\s\+$//e \| :%s/\t/  /e<CR><C-o>  " use ',s' to clean trailing
 map <leader>= <Esc>:1,$!xmllint --format -<CR>  " use ',=' to xml re-indent
 nnoremap <leader>l :set invwrap wrap?<CR>  " use ',l' to toggle wordwrap
 nnoremap <leader>d :NERDTreeToggle<CR>  " use ',d' to toggle the NERDTree
-nmap <leader>p :let @* = expand("%:p") " use ',p' to copy the current path to system clipboard
+nmap <leader>p :let @* = expand("%:p")<CR> " use ',p' to copy the current path to the system clipboard
 set pastetoggle=<leader>p
 
 " notepad ++ like moves (line switchs)
