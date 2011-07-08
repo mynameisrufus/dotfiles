@@ -25,18 +25,26 @@ export PATH=/usr/sbin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/bin:$PATH
+<<<<<<< HEAD
 export PATH=~/Library/android-sdk-mac_x86/platform-tools:$PATH
 export NODE_PATH=/usr/local/lib/node
 export EDITOR=vim
+=======
+export PATH=/usr/local/lib/node:$PATH
+>>>>>>> ebf5830127d7e41ed8e6ccf359eebfeb992eafec
 
 # Customize to your needs...
 setopt NOCORRECTALL
 alias vi=vim
+<<<<<<< HEAD
 alias gd='git diff'
 alias gdv='git diff | vim -'
 alias be='bundle exec'
 alias bake='bundle exec rake'
 
 alias ack='ack -a --ignore-dir log --ignore-dir coverage'
+=======
+alias bake="bundle exec rake"
+>>>>>>> ebf5830127d7e41ed8e6ccf359eebfeb992eafec
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

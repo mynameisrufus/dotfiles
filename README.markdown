@@ -13,6 +13,14 @@ or back to bash:
 
     chsh -s /bin/bash
 
+### Adding a plugin
+
+    git submodule add https://github.com/user/vim-myplugin.git vim/bundle/vim-myplugin
+
+### Updating plugins
+
+    rake update
+
 ### Acknowledgements
 
 Thanks to [Ryan Bates]( http://github.com/ryanb/dotfiles) for the Rakefile code and [James Sadler](http://github.com/freshtonic/dotfiles) for the pathogen and bundle ideas.
