@@ -86,3 +86,7 @@ function! DoPrettyXML()
   exe "set ft=" . l:origft
 endfunction
 command! PrettyXML call DoPrettyXML()
+
+" activate plugin for matchit (don't really know if it's a good idea to let that here though)
+:filetype plugin on
+
