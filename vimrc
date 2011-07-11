@@ -16,13 +16,13 @@ set pastetoggle=<leader>p
 
 " notepad ++ like moves (line switchs)
 map <C-S-down> ddp
-imap <C-S-down> <Esc>ddp
+imap <C-S-down> <Esc>ddpi
 map <C-S-j> ddp
-imap <C-S-j> <Esc>ddp
+imap <C-S-j> <Esc>ddpi
 map <C-S-up> ddkP
-imap <C-S-up> <Esc>ddkP
+imap <C-S-up> <Esc>ddkPi
 map <C-S-k> ddkP
-imap <C-S-k> <Esc>ddkP
+imap <C-S-k> <Esc>ddkPi
 
 " switching on buffer like tabs
 :map <C-PageUp> :bp<CR>
@@ -46,6 +46,8 @@ set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 set number    " display line numbers
 set showmatch  " show matching bracket
+set foldmethod=indent   " folding is available following indentation
+set nofoldenable    " disable folding by default
 
 " Softtabs, 2 spaces
 set tabstop=2
