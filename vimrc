@@ -4,10 +4,17 @@ filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
+" colours
+set t_Co=256
+colorscheme vividchalk
+
 " :help usr05
+filetype indent on
+set cindent
+set smartindent
+set autoindent
 set nocompatible
 set backspace=indent,eol,start
-set autoindent
 set history=50
 if &t_Co > 2 || has("gui_running")
   syntax on
