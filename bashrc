@@ -9,6 +9,9 @@
 # ... or force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 
+# turn on vi bindings
+set -o vi
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -97,3 +100,4 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
