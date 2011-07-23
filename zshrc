@@ -36,5 +36,3 @@ alias vi=vim
 alias bake="bundle exec rake"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-cat /dev/random
