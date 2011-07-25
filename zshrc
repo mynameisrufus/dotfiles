@@ -27,9 +27,6 @@ export PATH=/opt/local/bin:$PATH
 export PATH=/opt/bin:$PATH
 export PATH=/usr/local/lib/node:$PATH
 
-# turn on vi bindings
-bindkey -v
-
 # Customize to your needs...
 setopt NOCORRECTALL
 alias vi=vim
