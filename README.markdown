@@ -21,6 +21,13 @@ or back to bash:
 
     rake update
 
+### Custom commands (.vimrc)
+
+Toggle indentation for the current window with `;i` it is off by
+default.
+
+Reformat xml use `PrettyXML`.
+
 ### Acknowledgements
 
 Thanks to [Ryan Bates]( http://github.com/ryanb/dotfiles) for the Rakefile code and [James Sadler](http://github.com/freshtonic/dotfiles) for the pathogen and bundle ideas.

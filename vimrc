@@ -8,11 +8,24 @@ call pathogen#runtime_append_all_bundles()
 set t_Co=256
 colorscheme vividchalk
 
+" toggle indentation
+function! ToggleIndent()
+  let w:indentation = exists('w:indentation') ? !w:indentation : 1
+  if w:indentation
+    filetype indent on
+    set cindent
+    set smartindent
+    set autoindent
+  else
+    filetype indent off
+    set nocindent
+    set nosmartindent
+    set noautoindent
+  endif
+endfunction
+nmap <silent> ;i :call ToggleIndent()<CR>
+
 " :help usr05
-filetype indent on
-set cindent
-set smartindent
-set autoindent
 set nocompatible
 set backspace=indent,eol,start
 set history=50
