@@ -6,7 +6,7 @@ call pathogen#runtime_append_all_bundles()
 
 " colours
 set t_Co=256
-colorscheme vividchalk
+colorscheme wombat256
 
 " toggle indentation
 function! ToggleIndent()
