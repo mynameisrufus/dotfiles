@@ -20,16 +20,12 @@ plugins=(git osx ruby rvm npm node bundler rails3 brew gem github rails)
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=/usr/sbin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/opt/local/bin:$PATH
-export PATH=/opt/bin:$PATH
-export PATH=/usr/local/lib/node:$PATH
-
 # Customize to your needs...
 setopt NOCORRECTALL
-alias vi=vim
 alias bake="bundle exec rake"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# Add paths
+source $HOME/.pathrc
+
+# Add rbenv init to shell to enable shims and autocompletion.
+eval "$(rbenv init -)"

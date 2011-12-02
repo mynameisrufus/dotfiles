@@ -98,3 +98,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# Add paths
+source $HOME/.pathrc
+
+# Add rbenv init to shell to enable shims and autocompletion.
+eval "$(rbenv init -)"
