@@ -49,3 +49,6 @@
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-pbcopy"]
+	path = vim/bundle/vim-pbcopy
+	url = https://github.com/vim-scripts/pbcopy.vim.git
