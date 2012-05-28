@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-pbcopy"]
 	path = vim/bundle/vim-pbcopy
 	url = https://github.com/vim-scripts/pbcopy.vim.git
+[submodule "vim/bundle/vim-clojure"]
+	path = vim/bundle/vim-clojure
+	url = https://github.com/vim-scripts/VimClojure.git
