@@ -1,29 +1,13 @@
 " configure vim pathogen
 " http://github.com/tpope/vim-pathogen/blob/master/autoload/pathogen.vim  
-filetype off
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+
+call pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " colours
 set t_Co=256
 colorscheme wombat256
-
-" toggle indentation
-function! ToggleIndent()
-  let w:indentation = exists('w:indentation') ? !w:indentation : 1
-  if w:indentation
-    filetype indent on
-    set cindent
-    set smartindent
-    set autoindent
-  else
-    filetype indent off
-    set nocindent
-    set nosmartindent
-    set noautoindent
-  endif
-endfunction
-nmap <silent> ;i :call ToggleIndent()<CR>
 
 " :help usr05
 set nocompatible
@@ -38,8 +22,8 @@ set nowrap
 " set options
 set nobackup
 set nowritebackup
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set showcmd " display incomplete commands
+set incsearch " do incremental searching
 
 " Softtabs, 2 spaces
 set tabstop=2
@@ -82,5 +66,5 @@ function! DoPrettyXML()
   " restore the filetype
   exe "set ft=" . l:origft
 endfunction
+
 command! PrettyXML call DoPrettyXML()
-filetype plugin on

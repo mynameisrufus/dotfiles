@@ -23,9 +23,6 @@ or back to bash:
 
 ### Custom commands (.vimrc)
 
-Toggle indentation for the current window with `;i` it is off by
-default.
-
 Reformat xml use `PrettyXML`.
 
 ### Fixing "There was a problem with the editor 'vi'" on commit
