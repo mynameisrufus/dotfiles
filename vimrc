@@ -3,7 +3,10 @@
 
 call pathogen#infect()
 syntax on
-filetype plugin indent on
+filetype plugin indent off
+
+" clojure script syntax highlight
+autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " colours
 set t_Co=256
