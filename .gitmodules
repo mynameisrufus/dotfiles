@@ -58,3 +58,6 @@
 [submodule "vim/bundle/vim-json"]
 	path = vim/bundle/vim-json
 	url = https://github.com/rogerz/vim-json.git
+[submodule "vim/bundle/vim-hamstache"]
+	path = vim/bundle/vim-hamstache
+	url = https://github.com/glenngillen/hamstache.vim.git

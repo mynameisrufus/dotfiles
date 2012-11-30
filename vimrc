@@ -32,7 +32,8 @@ set incsearch " do incremental searching
 set tabstop=2
 set shiftwidth=2
 set expandtab
-set tw=72 " when the line will wrap
+set tw=80 " when the line will wrap
+set colorcolumn=81
 
 " Always display the status line
 set laststatus=2
@@ -71,3 +72,6 @@ function! DoPrettyXML()
 endfunction
 
 command! PrettyXML call DoPrettyXML()
+
+au BufRead,BufNewFile *.hamlc set ft=haml
+au BufRead,BufNewFile *.pp set ft=ruby

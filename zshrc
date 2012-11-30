@@ -29,3 +29,5 @@ source $HOME/.pathrc
 
 # Add rbenv init to shell to enable shims and autocompletion.
 eval "$(rbenv init -)"
+
+alias weinre="weinre --boundHost `ipconfig getifaddr en1`"
