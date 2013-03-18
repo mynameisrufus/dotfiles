@@ -16,18 +16,18 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem github)
+plugins=(git gem github bundler)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 setopt NOCORRECTALL
 alias bake="bundle exec rake"
+alias gs="git status"
+alias uber="uberpass"
 
 # Add paths
 source $HOME/.pathrc
 
 # Add rbenv init to shell to enable shims and autocompletion.
 eval "$(rbenv init -)"
-
-alias weinre="weinre --boundHost `ipconfig getifaddr en1`"
