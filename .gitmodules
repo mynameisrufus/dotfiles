@@ -61,3 +61,12 @@
 [submodule "vim/bundle/vim-hamstache"]
 	path = vim/bundle/vim-hamstache
 	url = https://github.com/glenngillen/hamstache.vim.git
+[submodule "vim/bundle/vim-indenthtml"]
+	path = vim/bundle/vim-indenthtml
+	url = https://github.com/vim-scripts/indenthtml.vim.git
+[submodule "vim/bundle/vim-vcl"]
+	path = vim/bundle/vim-vcl
+	url = https://github.com/smerrill/vcl-vim-plugin.git
+[submodule "vim/bundle/vim-emmet"]
+	path = vim/bundle/vim-emmet
+	url = https://github.com/mattn/emmet-vim.git

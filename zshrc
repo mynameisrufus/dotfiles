@@ -28,6 +28,7 @@ alias uber="uberpass"
 
 # Add paths
 source $HOME/.pathrc
+source /opt/boxen/env.sh
 
-# Add rbenv init to shell to enable shims and autocompletion.
-eval "$(rbenv init -)"
+# added by travis gem
+source /Users/rufuspost/.travis/travis.sh

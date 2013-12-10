@@ -3,7 +3,7 @@
 
 call pathogen#infect()
 syntax on
-filetype plugin indent off
+filetype plugin indent on
 
 " clojure script syntax highlight
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
