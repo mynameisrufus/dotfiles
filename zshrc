@@ -25,10 +25,14 @@ setopt NOCORRECTALL
 alias bake="bundle exec rake"
 alias gs="git status"
 alias uber="uberpass"
+alias tmux="TERM=screen-256color-bce tmux"
+alias bundlestub="bundle install --path=.gems --binstubs=.bin"
+
+# Custom
+for file in $HOME/.dotfiles/custom/*.sh
+do . $file
+done
 
 # Add paths
 source $HOME/.pathrc
 source /opt/boxen/env.sh
-
-# added by travis gem
-source /Users/rufuspost/.travis/travis.sh
