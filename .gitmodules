@@ -73,3 +73,9 @@
 [submodule "vim/bundle/vim-golang"]
 	path = vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang.git
+[submodule "vim/bundle/vim-docker"]
+	path = vim/bundle/vim-docker
+	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "vim/bundle/vim-haskell"]
+	path = vim/bundle/vim-haskell
+	url = https://github.com/lukerandall/haskellmode-vim.git

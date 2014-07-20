@@ -103,6 +103,4 @@ source $HOME/.pathrc
 
 # Add rbenv init to shell to enable shims and autocompletion.
 eval "$(rbenv init -)"
-
-# added by travis gem
-source /Users/rufuspost/.travis/travis.sh
+source /opt/boxen/env.sh
