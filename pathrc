@@ -11,3 +11,5 @@ export NODE_PATH=$HOME/.npm:$NODE_PATH
 export PATH=$HOME/.devski/bin:$PATH
 export PATH=$HOME/.clojurescript/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.goenv/bin:$PATH"
+export GOPATH="$HOME/.goenv"
