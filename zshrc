@@ -30,8 +30,13 @@ alias uber="uberpass"
 alias tmux="TERM=screen-256color-bce tmux"
 alias bundlestub="bundle install --path=.gems --binstubs=.bin"
 
-# Custom
+# Custom (not checked in)
 for file in $HOME/.dotfiles/custom/*.sh
+do . $file
+done
+
+# Scripts
+for file in $HOME/.dotfiles/scripts/*.sh
 do . $file
 done
 
