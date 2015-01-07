@@ -46,13 +46,6 @@ set laststatus=2
 
 imap <S-C-v> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
 
-" Show special characters unless golang (hide tabs)
-set invlist
-augroup File-Type
-  autocmd!
-  autocmd FileType go set invlist
-augroup END
-
 function! DoPrettyXML()
   " save the filetype so we can restore it later
   let l:origft = &ft 
