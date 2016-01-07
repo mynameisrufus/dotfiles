@@ -24,22 +24,11 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 setopt NOCORRECTALL
-alias bake="bundle exec rake"
-alias gs="git status"
-alias uber="uberpass"
-alias tmux="TERM=screen-256color-bce tmux"
-alias bundlestub="bundle install --path=.gems --binstubs=.bin"
-
-# Custom (not checked in)
-for file in $HOME/.dotfiles/custom/*.sh
-do . $file
-done
 
 # Scripts
-for file in $HOME/.dotfiles/scripts/*.sh
-do . $file
-done
+for file in $HOME/.dotfiles/config/*.sh; do source $file; done
+# for file in $HOME/.dotfiles/config/*.rb; do ruby $file; done
 
-# Add paths
-source $HOME/.pathrc
-source /opt/boxen/env.sh
+# Custom (not checked in)
+for file in $HOME/.dotfiles/custom/*.sh; do source $file; done
+# for file in $HOME/.dotfiles/custom/*.rb; do ruby $file; done
