@@ -15,7 +15,7 @@ or back to bash:
 
 ### Adding a plugin
 
-    $ git submodule add https://github.com/user/vim-myplugin.git vim/bundle/vim-myplugin
+    $ git submodule add --depth 1 https://github.com/user/vim-myplugin.git vim/bundle/vim-myplugin
 
 ### Updating plugins
 
