@@ -33,7 +33,8 @@ task :install do
 end
 
 task :update do
-  system %Q{wget --no-check-certificate --output-document=vim/autoload/pathogen.vim https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim}
+  system %Q{curl -o vim/autoload/pathogen.vim https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim}
+  system %Q{curl -o config/dotenv.sh https://raw.githubusercontent.com/gchaincl/dotenv.sh/master/dotenv.sh}
   system %Q{git submodule foreach git pull origin master}
 end
 

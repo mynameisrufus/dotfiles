@@ -27,8 +27,6 @@ setopt NOCORRECTALL
 
 # Scripts
 for file in $HOME/.dotfiles/config/*.sh; do source $file; done
-# for file in $HOME/.dotfiles/config/*.rb; do ruby $file; done
 
 # Custom (not checked in)
 for file in $HOME/.dotfiles/custom/*.sh; do source $file; done
-# for file in $HOME/.dotfiles/custom/*.rb; do ruby $file; done
