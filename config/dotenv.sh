@@ -1,26 +1,18 @@
-cd()
+dotenv()
 {
-	debug()
-	{
-		if [ $DOTENVSH_DEBUG = true ]; then
-			echo $1
-		fi
-	}
+  re="[A-Z]=[^/]"
+
+  exportenv() {
+    if [[ $a =~ $re ]]; then export $a; fi
+  }
 
 	loadenv()
 	{
-		debug "Loading $1"
-		for i in $(cat $1); do
-			export $i
-		done
+    cat $1 | while read a; do exportenv $a; done
 	}
-
-	builtin cd $@
-	ERR=$?
-
-	if [ $ERR -ne 0 ]; then; return $ERR; fi
 
 	if [ -e .env ]; then
 		loadenv .env
+    "${@:1}"
 	fi
 }
