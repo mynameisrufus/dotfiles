@@ -1,6 +1,6 @@
 ### Installation
 
-    $ git clone git@github.com:mynameisrufus/dotfiles.git ~/.dotfiles
+    $ git clone https://github.com/mynameisrufus/dotfiles.git ~/.dotfiles
     $ cd ~/.dotfiles
     $ git submodule update --init
     $ rake install

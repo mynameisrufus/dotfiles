@@ -94,3 +94,9 @@
 [submodule "vim/bundle/vim-graphql"]
 	path = vim/bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql.git
+[submodule "vim-colors-solarized"]
+	path = vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/vim-editorconfig"]
+	path = vim/bundle/vim-editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
