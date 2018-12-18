@@ -21,6 +21,12 @@ or back to bash:
 
     $ rake update
 
+### Removing plugins
+
+    $ rm -rf vim/bundle/vim-myplugin
+    $ git submodule deinit -f -- vim/bundle/vim-myplugin
+    $ rm -rf .git/modules/vim/bundle/vim-myplugin
+
 ### Custom commands (.vimrc)
 
 Reformat xml use `PrettyXML`.
