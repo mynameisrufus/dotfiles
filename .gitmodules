@@ -19,9 +19,6 @@
 [submodule "vim/bundle/vim-coffee"]
 	path = vim/bundle/vim-coffee
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/vim-textile"]
-	path = vim/bundle/vim-textile
-	url = https://github.com/kfl62/textile.vim.git
 [submodule "vim/bundle/vim-sed"]
 	path = vim/bundle/vim-sed
 	url = https://github.com/mynameisrufus/vim-sed.git
