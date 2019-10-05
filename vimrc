@@ -9,13 +9,9 @@ filetype plugin indent on
 autocmd BufRead,BufNewFile *.cljs setlocal filetype=clojure
 
 " colours
-
-" set t_Co=256
-" colorscheme wombat256
-
-let g:solarized_termtrans = 1
-syntax enable
-set background=light
+let g:solarized_termcolors=256
+set t_Co=256
+set background=dark
 colorscheme solarized
 
 " :help usr05
