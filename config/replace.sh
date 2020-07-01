@@ -1,22 +1,37 @@
 #!/bin/bash
 
-replaceone () {
+replace () {
+  if [ -z "$1" ];
+  then
+    echo "Usage: replace foo bar meow.js"
+    return
+  fi
+
   local name=$1
+
   local with=$2
+
   local file=$3
-  sed -i ".backup" -e "s/${name}/${with}/g" ${file}
+
+  local sepr="#"
+
+  sed -i "s${sepr}${name}${sepr}${with}${sepr}g" ${file}
 }
 
-# replaceall apple orange "*.rb"
-replaceall () {
-  local name=$1
-  local with=$2
-  local ext=$3
-
-  if [ -z "$3" ]
+findreplace () {
+  if [ -z "$1" ];
   then
-    find . -type f # -exec sed -i -e "s/${name}/${with}/g" {} \;
-  else
-    find . -type f -name "$3" -exec sed -i -e "s/${name}/${with}/g" {} \;
+    echo "Usage: findreplace foo bar src"
+    return
   fi
+
+  local name=$1
+
+  local with=$2
+
+  local patr=$3
+
+  local sepr="#"
+
+  grep -rl ${name} ${patr} | xargs -i@ sed -i "s${sepr}${name}${sepr}${with}${sepr}g" @;
 }

@@ -30,3 +30,5 @@ for file in $HOME/.dotfiles/config/*.sh; do source $file; done
 
 # Custom (not checked in)
 for file in $HOME/.dotfiles/custom/*.sh; do source $file; done
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
