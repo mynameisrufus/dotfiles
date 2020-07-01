@@ -74,3 +74,8 @@ command! PrettyXML call DoPrettyXML()
 
 au BufRead,BufNewFile *.hamlc set ft=haml
 au BufRead,BufNewFile *.pp set ft=ruby
+
+augroup SyntaxSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+augroup END
