@@ -75,6 +75,7 @@ command! PrettyXML call DoPrettyXML()
 au BufRead,BufNewFile *.hamlc set ft=haml
 au BufRead,BufNewFile *.pp set ft=ruby
 au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+au BufRead,BufNewFile *.mdx set syntax=typescript
 
 augroup SyntaxSettings
   autocmd!
