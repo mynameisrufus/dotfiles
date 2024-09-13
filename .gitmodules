@@ -94,3 +94,9 @@
 [submodule "vim/bundle/vim-typescript"]
 	path = vim/bundle/vim-typescript
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "vim-rbs"]
+	path = vim-rbs
+	url = https://github.com/jlcrochet/vim-rbs.git
+[submodule "vim/bundle/vim-myplugin"]
+	path = vim/bundle/vim-myplugin
+	url = https://github.com/jlcrochet/vim-rbs.git

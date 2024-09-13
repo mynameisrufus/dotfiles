@@ -3,7 +3,7 @@
     $ git clone https://github.com/mynameisrufus/dotfiles.git ~/.dotfiles
     $ cd ~/.dotfiles
     $ git submodule update --init
-    $ rake install
+    $ sh install.sh
 
 Changing shells:
 
@@ -19,21 +19,13 @@ or back to bash:
 
 ### Updating plugins
 
-    $ rake update
+    $ sh update.sh
 
 ### Removing plugins
 
     $ rm -rf vim/bundle/vim-myplugin
     $ git submodule deinit -f -- vim/bundle/vim-myplugin
     $ rm -rf .git/modules/vim/bundle/vim-myplugin
-
-### Custom commands (.vimrc)
-
-Reformat xml use `PrettyXML`.
-
-### Fixing "There was a problem with the editor 'vi'" on commit
-
-    $ git config --global core.editor /usr/bin/vim
 
 ### Acknowledgements
 

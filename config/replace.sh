@@ -33,6 +33,6 @@ findreplace () {
 
   local sepr="#"
 
-  grep -rl ${name} ${patr} | sed -i "s${sepr}${name}${sepr}${with}${sepr}g" @;
+  grep -rl ${name} ${patr} | sed -i '' -e "s${sepr}${name}${sepr}${with}${sepr}g" @;
   # find . -type f -name \'${patr}/*\' -exec sed -i "s${sepr}${name}${sepr}${with}${sepr}g" @;
 }

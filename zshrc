@@ -40,3 +40,4 @@ if [ -f '/Users/rufuspost/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rufus
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/rufuspost/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rufuspost/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
