@@ -1,0 +1,7 @@
+[user]
+  name = Rufus
+	email = rufuspost@gmail.com
+[github]
+	user = mynameisrufus
+[core]
+	editor = zed -w
