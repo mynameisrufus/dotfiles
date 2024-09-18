@@ -18,7 +18,7 @@
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "preferred_line_length": 80,
-  "soft_wrap": "preferred_line_length",
+  "soft_wrap": "bounded",
   "theme": {
     "mode": "system",
     "light": "Solarized Light",
@@ -26,7 +26,14 @@
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["solargraph", "rubocop", "!ruby-lsp"]
+      "language_servers": ["solargraph", "rubocop", "!ruby-lsp"],
+      "soft_wrap": "none"
+    },
+    "TypeScript": {
+      "soft_wrap": "none"
+    },
+    "JavaScript": {
+      "soft_wrap": "none"
     }
   },
   "lsp": {
